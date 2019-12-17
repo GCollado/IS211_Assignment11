@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html></html>
+
+    <head>
+        <title>To Do List </title>
+    </head>
+    <body>
+        {% body content %}
+        <h2>To Do List</h2>
+
+        <table>
+            {% for task in tasks %}
+            <tr>
+                <td>{{  task  }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> {{ author}}To Do List</title>
+    </head>
+
+    <body>
+        <h2>Add Task </h2>
+        <form action={{url_for('/submit')} method="post">
+            <br>Task <input type="text" name="task"> </input>
+            <br>Email: <input type="text" name="email"></input>
+            <br><input type="radio" name="priority" value="low">Low</input>
+            <br><input type="radio" name="priority" value="medium">Medium</input>
+            <br><input type="radio" name="priority" value="high">High</input>
+            <br><input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+
+
