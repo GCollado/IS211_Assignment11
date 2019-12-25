@@ -6,17 +6,23 @@
         <title>To Do List </title>
     </head>
     <body>
-        {% body content %}
-        <h2>To Do List</h2>
 
+        <h2>To Do List</h2>
         <table>
-            {% for task in tasks %}
             <tr>
-                <td>{{  task  }}</td>
+                <th>Task</th>
+                <th>Email</th>
+                <th>Priority</th>
             </tr>
+            {% for task in tasks %}
+                {% for key, value in task.items() %}
+            <tr>
+                <td>{{  value.get('task')  }}</td>
+                <td>{{  value.get('email')  }}</td>
+                <td>{{  value.get('priority')  }}</td>
+            </tr>
+                {% endfor %}
             {% endfor %}
         </table>
-
-        {% endblock %}
     </body>
 </html>
