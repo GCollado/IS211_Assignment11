@@ -45,13 +45,3 @@ def clear_To_Do():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
-
-
-
-
-
-
-
